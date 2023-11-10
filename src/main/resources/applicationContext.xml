@@ -52,5 +52,11 @@
 
     <jpa:repositories base-package="org.youcode.progresstracker.repositories"/>
 
+    <bean name="User" class="org.youcode.progresstracker.entities.User" scope="prototype"/>
+    <bean name="Objective" class="org.youcode.progresstracker.entities.Objective" scope="prototype"/>
+    <bean name="Task" class="org.youcode.progresstracker.entities.Task" scope="prototype"/>
+
     <bean name="UserService" class="org.youcode.progresstracker.services.UserService"/>
+    <bean name="ObjectiveService" class="org.youcode.progresstracker.services.ObjectiveService"/>
+    <bean name="TaskService" class="org.youcode.progresstracker.services.TaskService"/>
 </beans>
